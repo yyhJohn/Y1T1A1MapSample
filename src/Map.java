@@ -9,7 +9,7 @@ public class Map {
 
 
 
-    private char MapSymbol=' ';
+    private char MapSymbol='.';
     StringBuffer output= new StringBuffer();
 
 

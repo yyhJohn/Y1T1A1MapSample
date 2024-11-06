@@ -27,6 +27,10 @@ public class Map {
 
 
     public void placeRoom(Position pos, char symbol) {
+        map[pos.getY1()][pos.getX1()]= this.MapSymbol;
+        pos.setX1(pos.getX());
+        pos.setY1(pos.getY());
+        map[pos.getY()][pos.getX()] = symbol;
         if (pos.getX() >= 0 && pos.getX() < width && pos.getY() >= 0 && pos.getY() < height) {
             map[pos.getY()][pos.getX()] = symbol;
         }

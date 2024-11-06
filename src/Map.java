@@ -24,6 +24,8 @@ public class Map {
         }
     }
 
+
+
     public void placeRoom(Position pos, char symbol) {
         if (pos.getX() >= 0 && pos.getX() < width && pos.getY() >= 0 && pos.getY() < height) {
             map[pos.getY()][pos.getX()] = symbol;
